@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vote Dapp</title>
+  </head>
+
+  <body>
+    <div id="Metamask">
+      <span id="status">Status</span>
+      <br />
+      <button id="connectButton" onclick="bundle.connect()">Connect</button>
+    </div>
+    <div id="Data">
+      <hr>
+      <br />
+      <button id="getProjectsTotalBtn" onclick="bundle.getProjectCount()">Get Total Projects</button>
+      <br />
+      <span id="totalProject">Total Projects</span>
+      <hr>
+      <br />
+      <button id="getProjectsBtn" onclick="bundle.getProjects()">Get Projects</button>
+      <br />
+      <table>
+        <tbody id="project"></tbody>
+      </table>
+      <hr>
+      <br />
+      Description : <input id="inputDescription">
+      <br />
+      Goal : <input id="inputGoal">
+      <br />
+      Image Url : <input id="inputImageUrl">
+      <br />
+      Deadline : <input id="inputDeadline">
+      <br />
+      <button id="addProject" onclick="bundle.addProject()">Add Project</button>
+      <br />
+      <hr>
+      Project id : <input id="inputProjectIdDonate">
+      <br />
+      Amount : <input id="inputAmount">
+      <br />
+      <button id="donateBtn" onclick="bundle.Donate()">Donate</button>
+      <br />
+      <hr>
+      Project id : <input id="inputProjectIdApprove">
+      <br />
+      <button id="approveBtn" onclick="bundle.Approve()">Approve</button>
+      <br />
+      <hr>
+      Project id : <input id="inputProjectIdVote">
+      <br />
+      <button id="voteBtn" onclick="bundle.Vote()">Vote</button>
+      <br />
+      <hr>
+      Project id : <input id="inputProjectIdTransfer">
+      <br />
+      <button id="approveBtn" onclick="bundle.Transfer()">Transfer</button>
+      <br />
+      <hr>
+      CrowdSale Token
+      <br />
+      <button id="getCrowdSaleToken" onclick="bundle.getCrowdSaleToken()">Get CT Balance</button>
+      <br />
+      <span id="CTBalance">Total Balance</span>
+      <br />
+      <hr>
+      Love Token
+      <br />
+      <button id="getLoveToken" onclick="bundle.getLoveToken()">Get CT Balance</button>
+      <br />
+      <span id="LTBalance">Total Balance</span>
+      <br />
+      <hr>
+      Swap Token
+      <br />
+      <button id="RateBtn" onclick="bundle.Rate()">Get Rate</button>
+      <br />
+      <span id="rateValue">Rate Balance</span>
+      <br />
+      Swap Amount : <input id="swapAmount">
+      <br />
+      <button id="SwapBtn" onclick="bundle.Swap()">Swap</button>
+      <br />
+      <span id="swapBalance">Swap Balance</span>
+      <br />
+      <button id="WithdrawBtn" onclick="bundle.Withdraw()">Withdraw</button>
+      <br />
+
+    </div>
+    
+  </body>
+
+  <script src="./dist/bundle.js" type="text/javascript"></script>
+</html>
